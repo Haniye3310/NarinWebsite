@@ -1,0 +1,372 @@
+html,body,a,div,li,ul,h1{
+	padding:0;
+	margin:0;
+}
+a{
+	text-decoration:none;
+}
+ul{
+	list-style:none;
+}
+
+
+@font-face {
+	font-family: danaBold;
+	font-style: normal;
+	font-weight: bold;
+	src: url('../fonts/eot/dana-bold.eot');
+	src: url('../fonts/eot/dana-bold.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../fonts/woff2/dana-bold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/woff/dana-bold.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: danaRegular;
+	font-style: normal;
+	font-weight: normal;
+	src: url('../fonts/eot/dana-regular.eot');
+	src: url('../fonts/eot/dana-regular.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../fonts/woff2/dana-regular.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/woff/dana-regular.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+
+
+/**
+Iranic fonts	
+**/
+
+
+
+@font-face {
+	font-family: danaBoldItalic;
+	font-style: italic;
+	font-weight: bold;
+	src: url('../fonts/eot/dana-bolditalic.eot');
+	src: url('../fonts/eot/dana-bolditalic.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../fonts/woff2/dana-bolditalic.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/woff/dana-bolditalic.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: danaRegularItalic;
+	font-style: italic;
+	font-weight: normal;
+	src: url('../fonts/eot/dana-regularitalic.eot');
+	src: url('../fonts/eot/dana-regularitalic.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../fonts/woff2/dana-regularitalic.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/woff/dana-regularitalic.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+body{
+	font-family: danaRegular;
+}
+section.header{
+	background-color:black;
+	height:9vw;
+	z-index:4;
+	overflow: hidden;
+}
+
+section.header >div.logo{
+	display: inline-block;
+}
+section.header >div.logo img{
+	height:5.8vw;
+	background-position:center;
+	background-repeat:no-repeat;
+	width:12vw;
+	position:absolute;
+	left:3vw;
+	top:1.3vw;
+}
+
+section.header > div.navigation1{
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	top:2.3vw;
+}
+section.header > div.navigation1 ul li{
+	float:right;
+	margin-right:4vw;
+	color:white;
+	font-size:1.5vw;
+}
+
+section.header div.sidebar{
+	display:none;
+}
+section.header div.main{
+	display:none;
+}
+section.header >div.navigation1 ul a li{
+	padding-bottom: 1vw;
+}
+section.header >div.navigation1 ul a:nth-child(5) li:nth-child(1){
+	color:#ff7700;
+	border-bottom:1px #ff7700 solid;
+	
+}
+section.content{
+	text-align:right;
+
+}
+section.content>div.title{
+	font-size:1.5vw;
+	margin-top:2vw;
+}
+section.content>div.title a.so{
+	color:#707070;
+}
+section.content>div.title a.ra{
+	color:#ff7700;
+}
+section.content>div.title a.po{
+	color:#ff7700;
+}
+section.content> div.content{
+	font-size:1.5vw;
+	height:30vw;
+	margin-right:5vw;
+	margin-left:10vw;
+}
+section.content> div.content div.title{
+	font-family:danaBold;
+	font-size:1.5vw;
+	color:#707070;
+	margin-bottom:2vw;
+}
+section.content>div.image{
+	margin-bottom:5vw;
+	margin-top:2vw;
+	text-align:left;
+	margin-left:2vw;
+	border-bottom: 1px #222221 solid;
+	width: 95vw;
+}
+section.content>div.image img{
+	width:35vw;
+}
+section.footer{
+	height:19vw;
+	background-color:black;
+}
+section.footer div.i{
+	padding-top:3.5vw;
+	display:inline-block;
+	margin-left:1.5vw;
+}
+section.footer div.i img{
+	height:2.5vw;
+	width:2.5vw;
+	margin-right:1.5vw;	
+}
+section.footer div.list{
+	display:inline-block;
+	position:absolute;
+	right:2vw;
+	margin-top:4vw;
+}
+section.footer div.list ul li{
+	color:white;
+	float:right;
+	padding-left:3.5vw;
+	font-size:1.5vw;
+}
+section.footer div.content{
+	margin-top:3.5vw;
+	font-size:1vw;
+	color:white;
+	margin-left:2.5vw;
+	display: inline-block;
+}
+section.footer div.search{
+	background-color:#222221;
+	height:3vw;
+	width:21vw;
+	display:inline-block;
+	position:absolute;
+	right:2vw;
+	margin-top:7vw;
+}
+section.footer div.search img{
+	height:2vw;
+	width:2vw;
+	text-align: left;
+	position: absolute;
+	top:0.5vw
+}
+section.footer div.search textarea{
+	float: right;
+	background-color:#222221;
+	border: none;
+	color: white;
+	width: 19vw;
+	height: 3vw;
+}
+@media(max-width: 575px){
+	section.header{
+		height:16vw;
+		box-shadow:none;
+	}
+	section.header div.navigation1{
+		display:none;
+	}
+	
+	section.header div.sidebar{
+		display:block;
+		
+	}
+	section.header div.main{
+		display:inline-block;
+		
+	}
+	
+	section.header div.logo img{
+		height:9vw;
+		width:19vw;
+		top:3vw;
+		left:5vw;
+	}
+	/* The sidebar menu */
+	.sidebar {
+	  height: 100%; /* 100% Full-height */
+	  width: 0; /* 0 width - change this with JavaScript */
+	  position: fixed; /* Stay in place */
+	  z-index: 1000; /* Stay on top */
+	  top: 0;
+	  right: 0;
+	  background-color: black; /* Black*/
+	  overflow-x: hidden; /* Disable horizontal scroll */
+	  padding-top: 20vw; /* Place content 60px from the top */
+	  transition: 0.5s;  /* 0.5 second transition effect to slide in the sidebar */
+	}
+	
+	/* The sidebar links */
+	.sidebar a {
+	  padding: 2vw 2vw 2vw 3vw;
+	  text-decoration: none;
+	  font-size: 4vw;
+	  color: white;
+	  display: block;
+	  transition: 0.3s;
+	  text-align:right;
+	  margin-right:5vw;
+	  margin-top:5vw;
+	}
+	
+	/* When you mouse over the navigation links, change their color */
+	.sidebar a:hover {
+	  color: #7b3900;
+	}
+	
+	/* Position and style the close button (top right corner) */
+	.sidebar .closebtn {
+	  position: absolute;
+	  top: 0;
+	  right: 0px;
+	  font-size: 10vw;
+	  margin-left: 5vw;
+	}
+	
+	/* The button used to open the sidebar */
+	.openbtn {
+	  font-size: 6vw;
+	  cursor: pointer;
+	  background-color: black;
+	  color: #7b3900;
+	  padding: 0px 15px;
+	  border: none;
+	  position:absolute;
+	  right:0;
+	  top: 3vw;
+	}
+	
+	
+	/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+	#main {
+	  transition: margin-left .5s; /* If you want a transition effect */
+	  padding: 20px;
+	}
+	
+	/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+	@media screen and (max-height: 450px) {
+	  .sidebar {padding-top: 15px;}
+	  .sidebar a {font-size: 18px;}
+	}
+
+
+	section.content>div.title{
+		font-size:2.5vw;
+	}
+
+	section.content> div.content{
+		font-size:2.5vw;
+		height:80vw;
+		margin-right:5vw;
+		margin-left:10vw;
+	}
+	section.content> div.content div.title{
+		font-size:2.5vw;
+	}
+	section.content>div.image{
+		margin-bottom:5vw;
+		margin-top:2vw;
+		text-align:left;
+		margin-left:2vw;
+	}
+	section.content>div.image img{
+		width:45vw;
+	}
+	
+	section.footer{
+		height:50vw;
+		background-color:black;
+	}
+	section.footer div.i{
+		padding-top:10vw;
+		display:block;
+		margin-left:5vw;
+	}
+	section.footer div.i img{
+		height:8vw;
+		width:8vw;
+		margin-right:3vw;	
+	}
+	section.footer div.list{
+		display:block;
+		position:absolute;
+		right:20vw;
+		margin-top:20vw;
+		display:none;
+	}
+	
+	section.footer div.content{
+		margin-top:5vw;
+		font-size:2.5vw;
+		color:white;
+		margin-left:5vw;
+		}
+	section.footer div.search{
+		background-color:#222221;
+		height:8vw;
+		width:50vw;
+		display:block;
+		position:absolute;
+		right:5vw;
+		margin-top:-40vw;
+	}
+	section.footer div.search img{
+		height:5vw;
+		width:6vw;
+		padding-top:2vw;
+		padding-left:2.5vw;
+	}
+	section.footer div.search textarea{
+		float: right;
+		background-color:#222221;
+		border: none;
+		color: white;
+		width: 44vw;
+		height: 8vw;
+	}
+
+
+}

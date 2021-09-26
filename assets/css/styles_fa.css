@@ -1,0 +1,1079 @@
+html,body,a,div,li,ul,h1{
+	padding:0;
+	margin:0;
+}
+a{
+	text-decoration:none;
+}
+ul{
+	list-style:none;
+}
+
+
+@font-face {
+	font-family: danaBold;
+	font-style: normal;
+	font-weight: bold;
+	src: url('../fonts/eot/dana-bold.eot');
+	src: url('../fonts/eot/dana-bold.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../fonts/woff2/dana-bold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/woff/dana-bold.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: danaRegular;
+	font-style: normal;
+	font-weight: normal;
+	src: url('../fonts/eot/dana-regular.eot');
+	src: url('../fonts/eot/dana-regular.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../fonts/woff2/dana-regular.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/woff/dana-regular.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+
+
+/**
+Iranic fonts	
+**/
+
+
+@font-face {
+	font-family: danaBoldItalic;
+	font-style: italic;
+	font-weight: bold;
+	src: url('../fonts/eot/dana-bolditalic.eot');
+	src: url('../fonts/eot/dana-bolditalic.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../fonts/woff2/dana-bolditalic.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/woff/dana-bolditalic.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: danaRegularItalic;
+	font-style: italic;
+	font-weight: normal;
+	src: url('../fonts/eot/dana-regularitalic.eot');
+	src: url('../fonts/eot/dana-regularitalic.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../fonts/woff2/dana-regularitalic.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/woff/dana-regularitalic.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+
+body{
+	font-family: danaRegular;
+	
+}
+section.header{
+	background-color:black;
+	height:9vw;
+	z-index:4;
+	overflow: hidden;
+}
+
+section.header >div.logo{
+	display: inline-block;
+}
+section.header >div.logo img{
+	height:5.8vw;
+	background-position:center;
+	background-repeat:no-repeat;
+	width:12vw;
+	position:absolute;
+	left:3vw;
+	top:1.3vw;
+}
+
+section.header > div.navigation1{
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	top:2.3vw;
+}
+section.header > div.navigation1 ul li{
+	float:right;
+	margin-right:4vw;
+	color:white;
+	font-size:1.5vw;
+}
+
+section.header div.sidebar{
+	display:none;
+}
+section.header div.main{
+	display:none;
+}
+section.header >div.navigation1 ul a li{
+	padding-bottom: 1vw;
+}
+section.header >div.navigation1 ul a:nth-child(1) li:nth-child(1){
+	color:#ff7700;
+	border-bottom:1px #ff7700 solid;
+	
+}
+section.products{
+	height: 68vw;
+	overflow: hidden;
+}
+section.products >a{
+	height:68vw;
+	padding-right: 0 !important;
+	margin-right: 0 !important;
+}
+section.products > a div.zamleft {
+	height:68vw;
+	background-image:url(../../images/coz1.jpg);
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size: cover;
+	box-shadow: inset 0px 9vw 5vw -1vw black;
+}
+section.products > a div.zamleft div.title{
+    z-index: 4;
+	font-size:2vw;
+	font-family:danaBold;
+	color:white;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 34vw;
+	margin: auto;
+	text-align: center;
+}
+section.products > a div.zamleft div.rgba{
+	background-color:rgba(0,0,0,0.5);
+	height:68vw;
+
+}
+section.products >div  {
+	padding-left: 0 !important;
+	margin-left: 0 !important;
+}
+section.products div a div.digi{
+	background-image:url(../../images/digi1.jpg);
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	height:29vw;
+	box-shadow: inset 0px 9vw 5vw -1vw black;
+}
+section.products div a div.digi div.title{
+	z-index: 4;
+	font-size:2vw;
+	font-family:danaBold;
+	color:white;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 15vw;
+	margin: auto;
+	text-align: center;
+}
+section.products div a div.digi div.rgba{
+	background-color:rgba(0,0,0,0.5);
+	height:29vw;
+}
+section.products a{
+	display:block;
+	
+}
+section.products{
+	padding-right: 0 !important;
+	margin-right: 0 !important;
+}
+section.products >div.sec{
+	padding-right: 0 !important;
+	margin-right: 0 !important;
+}
+section.products >div.sec >div.secone >a{
+	padding-right: 0 !important;
+	margin-right: 0 !important;
+}
+section.products >div.sec >div.secone a div.roya{
+	background-image:url(../../images/Dot1.jpg);
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	height:19vw;
+	
+}
+section.products >div.sec >div.secone a div.roya div.title{
+	z-index: 4;
+	font-size:2vw;
+	font-family:danaBold;
+	color:white;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 9vw;
+	margin: auto;
+	text-align: center;
+}
+section.products >div.sec >div.secone a div.roya div.rgba{
+	background-color:rgba(0,0,0,0.5);
+	height:19vw;
+	
+}
+section.products >div.sec >div.secone>div.seconediv{
+	padding-left: 0 !important;
+	margin-left: 0 !important;
+}
+section.products >div.sec >div.secone>div.seconediv a div.nabard{
+	background-image:url(../../images/infinity1.jpg);
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	height:9.5vw;
+	
+}
+section.products >div.sec >div.secone>div.seconediv a div.nabard div.title{
+	z-index: 4;
+	font-size:2vw;
+	font-family:danaBold;
+	color:white;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 4vw;
+	margin: auto;
+	text-align: center;
+}
+section.products >div.sec >div.secone>div.seconediv a div.nabard div.rgba{
+	background-color:rgba(0,0,0,0.5);
+	height:9.5vw;
+}
+
+section.products >div.sec >div.secone>div.seconediv a div.star{
+	background-image:url(../../images/bazistation2.jpg);
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	height:9.5vw;
+	position: relative;
+}
+section.products >div.sec >div.secone>div.seconediv a div.star div.title{
+	z-index: 4;
+	font-size:2vw;
+	font-family:danaBold;
+	color:white;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 4vw;
+	margin: auto;
+	text-align: center;
+}
+section.products >div.sec >div.secone>div.seconediv a div.star div.rgba{
+	background-color:rgba(0,0,0,0.5);
+	height:9.5vw;
+	
+}
+section.products >div.sec >div.sectwo a.box{
+	padding-right: 0 !important;
+	margin-right:0 !important ;
+}
+section.products >div.sec >div.sectwo a div.box{
+	background-image:url(../../images/bazibox1.jpg);
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	height:20vw;
+	
+}
+section.products >div.sec >div.sectwo a div.box div.title{
+	z-index: 4;
+	font-size:2vw;
+	font-family:danaBold;
+	color:white;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 8vw;
+	margin: auto;
+	text-align: center;
+}
+section.products >div.sec >div.sectwo a div.box div.rgba{
+	background-color:rgba(0,0,0,0.5);
+	height:20vw;
+
+}
+section.products >div.sec >div.sectwo a.crazy{
+	padding-left: 0 !important;
+	margin-left:0 !important ;
+}
+section.products >div.sec >div.sectwo a div.crazy{
+	background-image:url(../../images/zaghsiyah2.jpg);
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	height:20vw;
+}
+section.products >div.sec >div.sectwo a div.crazy div.title{
+	z-index: 4;
+	font-size:2vw;
+	font-family:danaBold;
+	color:white;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 8vw;
+	margin: auto;
+	text-align: center;
+}
+section.products >div.sec >div.sectwo a div.crazy div.rgba{
+	background-color:rgba(0,0,0,0.5);
+	height:20vw;
+
+}
+section.games{
+	background-color:black;
+	color:white;
+	margin-top:0;
+	position:relative;
+	text-align: center;
+	height: 40vw;
+}
+section.games > div.title{
+	text-align:center;
+	font-size:2vw;
+	font-family:danaBold;
+	padding-top:2vw;
+	
+}
+section.games div.firstRow{
+	text-align: center;
+}
+section.games div.firstRow div.title{
+	font-size:1.6vw;
+	float:right;
+	padding-right:3vw;
+	text-align: right;
+}
+section.games div.firstRow div.untitle{
+	padding-top:7vw;
+	width: 100%;
+	padding-bottom:7vw;
+	overflow-x: scroll;
+	overflow-y: hidden; 
+	white-space: nowrap;
+	text-align: center;
+	
+}
+section.games div.firstRow div.untitle::-webkit-scrollbar{
+	width: 50%;
+	height: 2px;
+	background-color: #ff7700;
+	
+}
+
+section.games div.firstRow div.untitle::-webkit-scrollbar-track {
+	background-color: #d5d5d5;
+	width: 100px;
+  }
+  
+section.games div.firstRow div.untitle::-webkit-scrollbar-thumb {
+	background-color: #ff7700;
+	width:25px;
+  }
+  section.games div.firstRow div.untitle{
+	  scrollbar-color: dark;
+	  scrollbar-width: thin;
+  }
+
+section.games div.firstRow div.untitle a{
+	color:white;
+}
+section.games div.firstRow div.untitle div.firstDiv{
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	height:14.5vw;
+	width:21vw;
+	display:inline-block;
+	margin-left:1.5vw;
+	margin-right: 1.5vw;
+	position:relative;
+}
+section.games div.firstRow div.untitle div.firstDiv div.mainD{
+	background-color:rgba(13, 13, 13, 0.6);
+	position:absolute;
+	width:21VW;
+	height:5VW;
+	top:9.5VW;
+}
+section.games div.firstRow div.untitle div.firstDiv div.mainD div.content{
+	float:right;
+	font-size:1.4VW;
+	margin-top:1vw;
+	margin-right:1vw;
+}
+section.games div.firstRow div.untitle div.firstDiv div.mainD div.download{
+	background-color:#43ab92;
+	width:7vw;
+	height:2vw;
+	margin-left:1vw;
+	text-align:center;
+	padding:0.3vw;
+	font-size: 1vw;
+	margin-top: 1.5vw;
+}
+
+section.games div.firstRow div.untitle div.firstDiv div.mainD img{
+	width: 2vw;
+	height:2vw;
+	float: right;
+	margin-top:1vw;
+	margin-right:1vw;
+}
+section.members{
+	background-image:url(../../images/daste.jpg);
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	height:50vw;
+	font-size:3vw;
+	color:white;
+	font-family:danaBold;
+	box-shadow: inset 0vw 0vw 18vw 2vw black;
+}
+section.members button{
+	position:absolute;
+	background-color:#ff7700;
+	padding:1vw;
+	margin-top:30vw;
+	right:14vw;
+	color:white;
+	font-size:2.5vw;
+	width:20vw;
+	height:7vw;
+	border:none;
+	cursor:pointer;
+	font-family:danaRegular;
+}
+section.members div{
+	position:absolute;
+	margin-top:42vw;
+	right:14vw;
+}
+section.coworkers{
+	height:35vw;
+	background-color:black;
+	color:white;
+	font-size:2vw;
+	font-family:danaBold;
+	text-align:center;
+	padding-top:4vw;
+	padding-right:6vw;
+	padding-left:6vw;
+}
+section.coworkers div{
+	margin-top:1vw;
+	text-align:right;
+}
+section.coworkers div img{
+	margin:2vw;
+	width:6vw;
+	
+	
+}
+section.employment{
+	background-image:url(../../images/estekhdam.jpg);
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	height:40vw;
+	font-size:2.5vw;
+	color:white;
+}
+section.employment button{
+	position:absolute;
+	background-color:#ff7700;
+	margin-top:20vw;
+	padding:1vw;
+	left:18vw;
+	color:white;
+	font-size:2.5vw;
+	width:18vw;
+	height:7vw;
+	border:none;
+	cursor:pointer;
+	font-family:danaRegular;
+}
+section.employment div{
+	position:absolute;
+	margin-top:12vw;
+	left:13vw;
+}
+
+section.footer{
+	height:19vw;
+	background-color:black;
+}
+section.footer div.i{
+	padding-top:3.5vw;
+	display:inline-block;
+	margin-left:1.5vw;
+}
+section.footer div.i img{
+	height:2.5vw;
+	width:2.5vw;
+	margin-right:1.5vw;	
+}
+section.footer div.list{
+	display:inline-block;
+	position:absolute;
+	right:2vw;
+	margin-top:4vw;
+}
+section.footer div.list ul li{
+	color:white;
+	float:right;
+	padding-left:3.5vw;
+	font-size:1.5vw;
+}
+section.footer div.content{
+	margin-top:3.5vw;
+	font-size:1vw;
+	color:white;
+	margin-left:2.5vw;
+	display: inline-block;
+}
+section.footer div.search{
+	background-color:#222221;
+	height:3vw;
+	width:21vw;
+	display:inline-block;
+	position:absolute;
+	right:2vw;
+	margin-top:7vw;
+}
+section.footer div.search img{
+	height:2vw;
+	width:2vw;
+	text-align: left;
+	position: absolute;
+	top:0.5vw
+}
+section.footer div.search textarea{
+	float: right;
+	background-color:#222221;
+	border: none;
+	color: white;
+	width: 19vw;
+	height: 3vw;
+}
+@media  (max-width: 575px) {
+	section.header{
+		height:16vw;
+		box-shadow:none;
+	}
+	section.header div.navigation1{
+		display:none;
+	}
+	
+	section.header div.sidebar{
+		display:block;
+	}
+	section.header div.main{
+		display:inline-block;
+	}
+	
+	section.header div.logo img{
+		height:9vw;
+		width:19vw;
+		top:3vw;
+		left:5vw;
+	}
+	/* The sidebar menu */
+	.sidebar {
+	  height: 100%; /* 100% Full-height */
+	  width: 0; /* 0 width - change this with JavaScript */
+	  position: fixed; /* Stay in place */
+	  z-index: 1000; /* Stay on top */
+	  top: 0;
+	  right: 0;
+	  background-color: black; /* Black*/
+	  overflow-x: hidden; /* Disable horizontal scroll */
+	  padding-top: 20vw; /* Place content 60px from the top */
+	  transition: 0.5s;  /* 0.5 second transition effect to slide in the sidebar */
+	}
+	
+	/* The sidebar links */
+	.sidebar a {
+	  padding: 2vw 2vw 2vw 3vw;
+	  text-decoration: none;
+	  font-size: 4vw;
+	  color: white;
+	  display: block;
+	  transition: 0.3s;
+	  text-align:right;
+	  margin-right:5vw;
+	  margin-top:5vw;
+	}
+	
+	/* When you mouse over the navigation links, change their color */
+	.sidebar a:hover {
+	  color: #7b3900;
+	}
+	
+	/* Position and style the close button (top right corner) */
+	.sidebar .closebtn {
+	  position: absolute;
+	  top: 0;
+	  right: 0px;
+	  font-size: 10vw;
+	  margin-left: 5vw;
+	}
+	
+	/* The button used to open the sidebar */
+	.openbtn {
+	  font-size: 6vw;
+	  cursor: pointer;
+	  background-color: black;
+	  color: #f05513 !important;
+	  -webkit-text-fill-color: #f05513;
+	  padding: 0px 15px;
+	  border: none;
+	  position:absolute;
+	  right:0;
+	  top: 3vw;
+	}
+	
+	
+	
+	/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+	#main {
+	  transition: margin-left .5s; /* If you want a transition effect */
+	  padding: 20px;
+	}
+	
+	/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+	@media screen and (max-height: 450px) {
+	  .sidebar {padding-top: 15px;}
+	  .sidebar a {font-size: 18px;}
+	}
+section.games{
+	margin-top:0;
+	height: 130vw;
+	
+}
+section.games > div.title{
+	font-size:5vw;
+	padding-top:5vw;
+}
+section.games div.firstRow div.title{
+	font-size:5vw;
+	padding-right:5vw;
+}
+section.games div.firstRow div.untitle{
+	padding-top:30vw;
+	padding-bottom:20vw;
+}
+
+section.games div.firstRow div.untitle div.firstDiv{
+	height:35vw;
+	width:60vw;
+	margin-left:10vw;
+	margin-right:10vw ;
+}
+section.games div.firstRow div.untitle div.firstDiv div.mainD{
+	width:60vw;
+	height:14vw;
+	top:21vw;
+}
+section.games div.firstRow div.untitle div.firstDiv div.mainD div.content{
+	font-size:4vw;
+	margin-top:3vw;
+	margin-right:2vw;
+}
+section.games div.firstRow div.untitle div.firstDiv div.mainD div.download{
+	width:20vw;
+	height:8vw;
+	margin-left:2vw;
+	padding-top:1vw;
+	font-size:3vw;
+	margin-top:3vw;
+}
+
+
+section.games div.secondRow div.title{
+	font-size:5vw;
+	padding-right:5vw;
+}
+section.games div.secondRow div.untitle{
+	padding-top:30vw;
+	padding-bottom:30vw;
+	
+}
+section.games div.secondRow div.untitle div.firstDiv{
+	height:35vw;
+	width:60vw;
+	margin-left:20vw;
+}
+section.games div.secondRow div.untitle div.firstDiv div.mainD{
+	width:60vw;
+	height:14vw;
+	top:21vw;
+}
+section.games div.secondRow div.untitle div.firstDiv div.mainD div.content{
+	font-size:4vw;
+	margin-top:3vw;
+	margin-right:2vw;
+}
+section.games div.secondRow div.untitle div.firstDiv div.mainD div.download{
+	width:20vw;
+	height:8vw;
+	margin-left:2vw;
+	padding-top:1vw;
+	font-size:3vw;
+	margin-top:3vw;
+	
+}
+section.games div.firstRow div.untitle div.firstDiv div.mainD img{
+	width: 5vw;
+	height:5vw;
+	float: right;
+	margin-top:4vw;
+	margin-right:3vw;
+}
+
+section.members{
+	background-image:url(../../images/daste.jpg);
+	height:50vw;
+	font-size:20vw;
+	color:white;
+	font-family:danaBold;
+	width:100vw;
+}
+section.members div{
+	position:absolute;
+	margin-top:35vw;
+	right:50vw;
+	height:0px;
+	font-size:4vw;
+}
+section.members button{
+	position:absolute;
+	background-color:#ff7700;
+
+	margin-top:25vw;
+	right:50vw;
+	color:white;
+	font-size:4vw;
+	width:35vw;
+	height:8vw;
+	border:none;
+	cursor:pointer;
+	font-family:danaRegular;
+}
+section.coworkers{
+	height:85vw;
+	background-color:black;
+	box-shadow:0 -3vw 10vw 8vw #000;
+	color:white;
+	font-size:5.5vw;
+	font-family:danaBold;
+	text-align:center;
+	padding-top:10vw;
+	padding-right:3vw;
+	padding-left:3vw;
+}
+section.coworkers div{
+	margin-top:5vw;
+	text-align:center;
+}
+section.coworkers div img{
+	margin:4vw;
+	
+	
+}
+section.employment{
+	
+	height:50vw;
+	font-size:4.5vw;
+	color:white;
+}
+section.employment button{
+	position:absolute;
+	background-color:#ff7700;
+	margin-top:30vw;
+	padding:1vw;
+	left:15vw;
+	color:white;
+	font-size:4vw;
+	width:30vw;
+	height:10vw;
+	border:none;
+	cursor:pointer;
+	font-family:danaRegular;
+}
+section.employment div{
+	position:absolute;
+	margin-top:17vw;
+	left:10vw;
+}
+section.footer{
+	height:50vw;
+	background-color:black;
+}
+section.footer div.i{
+	padding-top:10vw;
+	display:block;
+	margin-left:5vw;
+}
+section.footer div.i img{
+	height:8vw;
+	width:8vw;
+	margin-right:3vw;	
+}
+section.footer div.list{
+	display:block;
+	position:absolute;
+	right:20vw;
+	margin-top:20vw;
+	display:none;
+}
+
+section.footer div.content{
+	margin-top:5vw;
+	font-size:2.5vw;
+	color:white;
+	margin-left:5vw;
+	}
+section.footer div.search{
+	background-color:#222221;
+	height:8vw;
+	width:50vw;
+	display:block;
+	position:absolute;
+	right:5vw;
+	margin-top:-40vw;
+}
+section.footer div.search img{
+	height:5vw;
+	width:6vw;
+	padding-top:2vw;
+	padding-left:2.5vw;
+}
+section.footer div.search textarea{
+	float: right;
+	background-color:#222221;
+	border: none;
+	color: white;
+	width: 44vw;
+	height: 8vw;
+}
+section.products > a div.zamleft div.title{
+	font-size:3vw;
+}
+section.products div a div.digi div.title{
+	font-size:3vw ;
+}
+section.products >div.sec >div.secone a div.roya div.title{
+	font-size:3vw ;
+}
+section.products >div.sec >div.secone>div.seconediv a div.nabard div.title{
+	font-size:3vw ;
+}
+section.products >div.sec >div.secone>div.seconediv a div.star div.title{
+	font-size:3vw ;
+}
+section.products >div.sec >div.sectwo a div.box div.title{
+	font-size:3vw ;
+}
+section.products >div.sec >div.sectwo a div.crazy div.title{
+	font-size:3vw ;
+}
+
+}
+@media only screen and (max-width: 992px){
+
+	section.products{
+		height: 420vw;
+		background-color: black;
+	}
+	section.products > a{
+		height: 100vw;
+	}
+	section.products > a div.zamleft {
+		box-shadow:inset 0px 10vw 20vw 0vw #000000;
+		height:100%;
+		background-position:center;
+		background-repeat:no-repeat;
+		background-size: cover;
+		padding: 0 !important;
+		margin: 0 !important;
+	}
+	section.products > a div.zamleft div.title{
+		z-index: 4;
+		font-family:danaBold;
+		color:white;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 50vw;
+		margin: auto;
+		text-align: center;
+	}
+	section.products > a div.zamleft div.rgba{
+		background-color:rgba(0,0,0,0.5);
+		height:100%;
+	}
+	
+	section.products div a div.digi{
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height:50vw;
+		margin-top: 3.7vw !important;
+		box-shadow:inset 0px 10vw 20vw 0vw #000000;
+	}
+	section.products div a div.digi div.title{
+		z-index: 4;
+		font-family:danaBold;
+		color:white;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 25vw;
+		margin: auto;
+		text-align: center;
+	}
+	section.products div a div.digi div.rgba{
+		background-color:rgba(0,0,0,0.5);
+		height:50vw;
+		position: absolute;
+		top: 0;
+		margin-top: 3.7vw !important;
+	}
+
+	section.products >div.sec >div.secone a div.roya{
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height:50vw;
+		margin-top: 3.7vw !important;
+		box-shadow:inset 0px 10vw 20vw 0vw #000000;
+	}
+	section.products >div.sec >div.secone a div.roya div.title{
+		z-index: 4;
+		font-family:danaBold;
+		color:white;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 25vw;
+		margin: auto;
+		text-align: center;
+	}
+	section.products >div.sec >div.secone a div.roya div.rgba{
+		background-color:rgba(0,0,0,0.5);
+		height:50vw;
+		position: absolute;
+		top: 0;
+		margin-top: 3.7vw !important;
+	}
+	section.products >div.sec >div.secone>div.seconediv a div.nabard{
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height:50vw;
+		margin-top: 3.7vw !important;
+		box-shadow:inset 0px 10vw 20vw 0vw #000000;
+	}
+	section.products >div.sec >div.secone>div.seconediv a div.nabard div.title{
+		z-index: 4;
+		font-family:danaBold;
+		color:white;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 25vw;
+		margin: auto;
+		text-align: center;
+	}
+	section.products >div.sec >div.secone>div.seconediv a div.nabard div.rgba{
+		background-color:rgba(0,0,0,0.5);
+		height:50vw;
+		position: absolute;
+		top: 0;
+		margin-top: 3.7vw !important;
+	}
+	
+	section.products >div.sec >div.secone>div.seconediv a div.star{
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height:50vw;
+		position: relative;
+		margin-top: 3.7vw !important;
+		box-shadow:inset 0px 10vw 20vw 0vw #000000;
+	}
+	section.products >div.sec >div.secone>div.seconediv a div.star div.title{
+		z-index: 4;
+		font-family:danaBold;
+		color:white;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 25vw;
+		margin: auto;
+		text-align: center;
+	}
+	section.products >div.sec >div.secone>div.seconediv a div.star div.rgba{
+		background-color:rgba(0,0,0,0.5);
+		height:50vw;
+		position: absolute;
+		top: 0;
+		
+	}
+	
+	section.products >div.sec >div.sectwo a div.box{
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height:50vw;
+		margin-top: 3.7vw !important;
+		box-shadow:inset 0px 10vw 20vw 0vw #000000;
+	}
+	section.products >div.sec >div.sectwo a div.box div.title{
+		z-index: 4;
+		font-family:danaBold;
+		color:white;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 25vw;
+		margin: auto;
+		text-align: center;
+	}
+	section.products >div.sec >div.sectwo a div.box div.rgba{
+		background-color:rgba(0,0,0,0.5);
+		height:50vw;
+		position: absolute;
+		top: 0;
+		margin-top: 3.7vw !important;
+	}
+	
+	section.products >div.sec >div.sectwo a div.crazy{
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin-top: 3.7vw !important;
+		height:50vw;
+		box-shadow:inset 0px 10vw 20vw 0vw #000000;
+	}
+	section.products >div.sec >div.sectwo a div.crazy div.title{
+		z-index: 4;
+		font-family:danaBold;
+		color:white;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 25vw;
+		margin: auto;
+		text-align: center;
+	}
+	section.products >div.sec >div.sectwo a div.crazy div.rgba{
+		background-color:rgba(0,0,0,0.5);
+		height:50vw;
+		position: absolute;
+		top: 0;
+		margin-top: 3.7vw !important;
+	}
+	
+}

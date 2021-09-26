@@ -1,0 +1,957 @@
+html,body,a,div,li,ul,h1{
+	padding:0;
+	margin:0;
+}
+a{
+	text-decoration:none;
+}
+ul{
+	list-style:none;
+}
+
+
+@font-face {
+	font-family: danaBold;
+	font-style: normal;
+	font-weight: bold;
+	src: url('../fonts/eot/dana-bold.eot');
+	src: url('../fonts/eot/dana-bold.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../fonts/woff2/dana-bold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/woff/dana-bold.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: danaRegular;
+	font-style: normal;
+	font-weight: normal;
+	src: url('../fonts/eot/dana-regular.eot');
+	src: url('../fonts/eot/dana-regular.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../fonts/woff2/dana-regular.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/woff/dana-regular.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+
+
+/**
+Iranic fonts	
+**/
+
+
+@font-face {
+	font-family: danaBoldItalic;
+	font-style: italic;
+	font-weight: bold;
+	src: url('../fonts/eot/dana-bolditalic.eot');
+	src: url('../fonts/eot/dana-bolditalic.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../fonts/woff2/dana-bolditalic.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/woff/dana-bolditalic.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: danaRegularItalic;
+	font-style: italic;
+	font-weight: normal;
+	src: url('../fonts/eot/dana-regularitalic.eot');
+	src: url('../fonts/eot/dana-regularitalic.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../fonts/woff2/dana-regularitalic.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/woff/dana-regularitalic.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+body{
+	font-family: danaRegular;
+}
+section.header{
+	background-color:black;
+	height:9vw;
+	z-index:4;
+	overflow: hidden;
+}
+
+section.header >div.logo{
+	display: inline-block;
+}
+section.header >div.logo img{
+	height:5.8vw;
+	background-position:center;
+	background-repeat:no-repeat;
+	width:12vw;
+	position:absolute;
+	left:3vw;
+	top:1.3vw;
+}
+
+section.header > div.navigation1{
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	top:2.3vw;
+}
+section.header > div.navigation1 ul li{
+	float:right;
+	margin-right:4vw;
+	color:white;
+	font-size:1.5vw;
+}
+
+section.header div.sidebar{
+	display:none;
+}
+section.header div.main{
+	display:none;
+}
+section.header >div.navigation1 ul a li{
+	padding-bottom: 1vw;
+}
+section.header >div.navigation1 ul a:nth-child(3) li:nth-child(1){
+	color:#ff7700;
+	border-bottom:1px #ff7700 solid;
+	
+}
+section.image{
+	background-image:url(../../images/coz.jpg);
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	height:921px;
+	color:white;
+	font-size:3vw;
+	position:relative;
+	box-shadow: inset 0 -50px 60px 4px black;
+}
+section.image div{
+	position:absolute;
+	bottom:2vw;
+	right:5vw;
+}
+section.clash{
+	text-align:right;
+	
+}
+section.clash div.nav1{
+	color:#707070;
+	margin-top:2vw;
+	margin-bottom:2vw;
+	margin-right:2vw;
+	font-size:1.5vw;
+}
+section.clash div.content{
+	display:inline-block;
+	width:50%;
+	margin-right:2vw;
+	margin-top:2vw;
+	font-size:1.5vw;
+	margin-left:10px;
+	text-align: right;
+	padding-top: 30px;
+	height: 43vw;
+}
+section.clash div.bar{
+	display:inline-block;
+	width:50%;
+	position:absolute;
+	left:2vw;
+	text-align: right;
+	
+}
+section.clash div.bar div.title{
+	font-family:danaBold;
+	font-size:2vw;
+	margin-bottom:3vw;
+	margin-left: 12vw;
+	text-align: center;
+	
+}
+section.clash div.bar div.part{
+	position:relative;
+	margin-top:20px;
+	margin-right: 40px;
+	text-align: center;
+}
+section.clash div.bar div.part div.image{
+	display:inline-block;
+}
+section.clash div.bar div.part div.matn{
+	display:inline-block;
+	margin-right:2px;
+	font-size: 1.5vw;
+	
+}
+section.clash div.bar div.part div.image img{
+	height:9vw;
+	width:9vw;
+}
+
+section.list{
+	
+	padding-bottom:5vw;
+	overflow-x: auto;
+	overflow-y: hidden; 
+	white-space: nowrap;
+	margin-bottom: 5vw;
+	scrollbar-color: dark;
+	scrollbar-width: thin;
+}
+section.list::-webkit-scrollbar{
+	width: 50%;
+	height: 3px;
+	background-color: #ff7700;
+	
+}
+section.list::-webkit-scrollbar-track {
+	background-color: #d5d5d5;
+  }
+section.list::-webkit-scrollbar-thumb {
+	background-color: #ff7700;
+}
+
+section.list div.image{
+	display:inline-block;
+	margin-left:2vw;
+}
+section.list div.image img{
+	width:20vw;
+	height:15vw;
+}
+section.content{
+	padding-right:2vw;
+	padding-left:2vw;
+	font-size:1.5vw;
+	text-align:right;
+	padding-bottom:7vw;
+}
+section.label{
+	margin-bottom: 20vw;
+	text-align: right;
+	font-size: 1vw;
+	padding-right: 2vw;
+}
+section.label div{
+	display: inline-block;
+}
+
+section.label div div.tag{
+	background-color: #39b405;
+	height:3vw;
+	padding: 0.5vw;
+	font-family: dana;
+}
+section.label div div.tag img{
+	height: 1vw;
+	width: 1vw;
+}
+section.label div div.title{
+	background-color: #c7c7c7;
+	height: 3vw;
+	font-family: dana;
+	padding-top: 0.5vw;
+	padding-bottom:0.5vw ;
+	padding-left: 2vw;
+	padding-right: 2vw;
+}
+section.label div.b1{
+	height: 4vw;
+}
+section.label div.b{
+	font-family: dana;
+	color: #b7b7b7;
+	margin: 1vw;
+}
+section.comment{
+	position:relative;
+	height:52vw;
+	color:#707070;
+}
+section.comment div.first{
+	border:2px #b7b7b7 solid;
+	width:60%;
+	height:19vw;
+	text-align:right;
+	position:absolute;
+	right:3vw;
+}
+section.comment div.first div.text{
+	border-top:2px #b7b7b7 solid;
+	text-align:right;
+	width:80%;
+	max-height: 30vw;
+	margin-left:auto;
+	margin-right: auto;
+	padding-top:2vw;
+	font-size:1.5vw;
+}
+section.comment div.first div.name{
+	display:inline-block;
+	font-family:danaBold;
+	font-size:1.5vw;
+}
+section.comment div.first div.response{
+	display:inline-block;
+	margin-right:65%;
+	width: 2vw;
+	height: 2vw;
+	margin-bottom:-10%;
+	font-size:1vw;
+	font-family:danaBold;
+}
+section.comment div.first div.image{
+	display:inline-block;
+	padding-top:1vw;
+	padding-right:1vw;
+	padding-left:1vw;
+	padding-bottom:1vw;
+}
+section.comment div.first div.image img{
+	width:6vw;
+	height:6vw;
+
+}
+section.comment div.second{
+	top:22vw;
+	border:2px #b7b7b7 solid;
+	width:60%;
+	height:19vw;
+	text-align:right;
+	position:absolute;
+	right:7vw;
+}
+section.comment div.second div.text{
+	border-top:2px #b7b7b7 solid;
+	text-align:right;
+	width:80%;
+	max-height: 30vw;
+	margin-left:auto;
+	margin-right: auto;
+	padding-top:2vw;
+	font-size:1.5vw;
+}
+section.comment div.second div.name{
+	display:inline-block;
+	font-family:danaBold;
+	font-size:1.5vw;
+}
+section.comment div.second div.response{
+	display:inline-block;
+	margin-right:65%;
+	width: 2vw;
+	height: 2vw;
+	margin-bottom:-10%;
+	font-size:1vw;
+	font-family:danaBold;
+}
+section.comment div.second div.image{
+	display:inline-block;
+	padding-top:1vw;
+	padding-right:1vw;
+	padding-left:1vw;
+	padding-bottom:1vw;
+}
+section.comment div.second div.image img{
+	width:6vw;
+	height:6vw;
+}
+section.comment div.third{
+	border:2px #b7b7b7 solid;
+	width:60%;
+	height:19vw;
+	text-align:right;
+	position:absolute;
+	right:3vw;
+	top:44vw;
+}
+section.comment div.third div.text{
+	border-top:2px #b7b7b7 solid;
+	text-align:right;
+	width:80%;
+	max-height: 30vw;
+	margin-left:auto;
+	margin-right: auto;
+	padding-top:2vw;
+	font-size:1.5vw;
+}
+section.comment div.third div.name{
+	display:inline-block;
+	font-family:danaBold;
+	font-size:1.5vw;
+}
+section.comment div.third div.response{
+	display:inline-block;
+	margin-right:65%;
+	width: 2vw;
+	height: 2vw;
+	margin-bottom:-10%;
+	font-size:1vw;
+	font-family:danaBold;
+}
+section.comment div.third div.image{
+	display:inline-block;
+	padding-top:1vw;
+	padding-right:1vw;
+	padding-left:1vw;
+	padding-bottom:1vw;
+}
+section.comment div.third div.image img{
+	width:6vw;
+	height:6vw;
+}
+section.frame{
+	text-align:right;
+	height:47vw;
+	position:relative;
+	top:16vw;
+}
+section.frame textarea.mainf{
+	border:1px gray solid;
+	height:10vw;
+	width:60vw;
+	position:absolute;
+	right:1.5vw;
+}
+section.frame input.webf{
+	border:1px gray solid;
+	height:2vw;
+	width:15vw;
+	position:absolute;
+	right:5vw;
+	top:15.3vw;
+	padding-right:1vw;
+	text-align: right;
+	font-size: 1vw;
+}
+section.frame input.emailf{
+	border:1px gray solid;
+	height:2vw;
+	width:15vw;
+	position:absolute;
+	right:25vw;
+	top:15.3vw;
+	padding-right:1vw;
+	text-align: right;
+	font-size: 1vw;
+}
+section.frame input.namef{
+	border:1px gray solid;
+	height:2vw;
+	width:15vw;
+	position:absolute;
+	right:45vw;
+	top:15.3vw;
+	padding-right:1vw;
+	text-align: right;
+	font-size: 1vw;
+}
+section.frame input.send{
+	background-color:#ff7700;
+	color:white;
+	width:15vw;
+	height:2.5vw;
+	font-size: 1vw;
+	text-align:center;
+	border: none;
+	position:absolute;
+	top:20vw;
+	right:50vw;
+}
+section.frame div.title{
+	font-family:danaBold;
+	font-size:2vw;
+	padding-right:1vw;
+	padding-bottom:1.5vw;
+}
+section.footer{
+	height:19vw;
+	background-color:black;
+}
+section.footer div.i{
+	padding-top:3.5vw;
+	display:inline-block;
+	margin-left:1.5vw;
+}
+section.footer div.i img{
+	height:2.5vw;
+	width:2.5vw;
+	margin-right:1.5vw;	
+}
+section.footer div.list{
+	display:inline-block;
+	position:absolute;
+	right:2vw;
+	margin-top:4vw;
+}
+section.footer div.list ul li{
+	color:white;
+	float:right;
+	padding-left:3.5vw;
+	font-size:1.5vw;
+}
+section.footer div.content{
+	margin-top:3.5vw;
+	font-size:1vw;
+	color:white;
+	margin-left:2.5vw;
+	display: inline-block;
+}
+section.footer div.search{
+	background-color:#222221;
+	height:3vw;
+	width:21vw;
+	display:inline-block;
+	position:absolute;
+	right:2vw;
+	margin-top:7vw;
+}
+section.footer div.search img{
+	height:2vw;
+	width:2vw;
+	text-align: left;
+	position: absolute;
+	top:0.5vw
+}
+section.footer div.search textarea{
+	float: right;
+	background-color:#222221;
+	border: none;
+	color: white;
+	width: 19vw;
+	height: 3vw;
+}
+@media (max-width: 575px){
+	section.header{
+		height:16vw;
+		box-shadow:none;
+	}
+	section.header div.navigation1{
+		display:none;
+	}
+	
+	section.header div.sidebar{
+		display:block;
+		
+	}
+	section.header div.main{
+		display:inline-block;
+		
+	}
+	
+	section.header div.logo img{
+		height:9vw;
+		width:19vw;
+		top:3vw;
+		left:5vw;
+	}
+	/* The sidebar menu */
+	.sidebar {
+	  height: 100%; /* 100% Full-height */
+	  width: 0; /* 0 width - change this with JavaScript */
+	  position: fixed; /* Stay in place */
+	  z-index: 1000;/* Stay on top */
+	  top: 0;
+	  right: 0;
+	  background-color: black; /* Black*/
+	  overflow-x: hidden; /* Disable horizontal scroll */
+	  padding-top: 20vw; /* Place content 60px from the top */
+	  transition: 0.5s;  /* 0.5 second transition effect to slide in the sidebar */
+	}
+	
+	/* The sidebar links */
+	.sidebar a {
+	  padding: 2vw 2vw 2vw 3vw;
+	  text-decoration: none;
+	  font-size: 4vw;
+	  color: white;
+	  display: block;
+	  transition: 0.3s;
+	  text-align:right;
+	  margin-right:5vw;
+	  margin-top:5vw;
+	}
+	
+	/* When you mouse over the navigation links, change their color */
+	.sidebar a:hover {
+	  color: #7b3900;
+	}
+	
+	/* Position and style the close button (top right corner) */
+	.sidebar .closebtn {
+	  position: absolute;
+	  top: 0;
+	  right: 0px;
+	  font-size: 10vw;
+	  margin-left: 5vw;
+	}
+	
+	/* The button used to open the sidebar */
+	.openbtn {
+	  font-size: 6vw;
+	  cursor: pointer;
+	  background-color: black;
+	  color: #7b3900;
+	  padding: 0px 15px;
+	  border: none;
+	  position:absolute;
+	  right:0;
+	  top: 3vw;
+	}
+	
+	
+	
+	/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+	#main {
+	  transition: margin-left .5s; /* If you want a transition effect */
+	  padding: 20px;
+	}
+	
+	/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+	@media screen and (max-height: 450px) {
+	  .sidebar {padding-top: 15px;}
+	  .sidebar a {font-size: 18px;}
+	}
+	
+
+
+	section.image{
+		background-image:url(../../images/coz.jpg);
+		background-position:center;
+		background-repeat:no-repeat;
+		background-size:cover;
+		height:60vw;
+		color:white;
+		font-size:4vw;
+		position:relative;
+	}
+	section.image div{
+		position:absolute;
+		bottom:2vw;
+		right:5vw;
+	}
+	section.clash{
+		text-align:right;
+		padding-bottom:10vw;
+		height:130vw;
+		padding-right: 5vw;
+	}
+	section.clash div.nav1{
+		color:#707070;
+		margin-top:2vw;
+		margin-bottom:2vw;
+		padding-right:0vw;
+		font-size:2.5vw;
+	}
+	section.clash div.content{
+		display:block;
+		width:100%;
+		padding-right:2vw;
+		margin-top:2vw;
+		margin-bottom:2vw;
+		font-size:2.5vw;
+		text-align: right;
+		padding-top: 6vw;
+	}
+	section.clash div.bar{
+		display:block;
+		position:absolute;
+		width: 98%;
+		right: 0;
+		text-align: right;
+		margin-top: 12vw;
+	}
+	section.clash div.bar div.title{
+		font-family:danaBold;
+		font-size:3vw;
+		margin-bottom:3vw;
+		margin-left: 0vw;
+		text-align: right;
+		padding-right: 5vw;
+		
+	}
+	section.clash div.bar div.part{
+		position:relative;
+		margin-top:4vw;
+		margin-right: 10vw;
+		text-align: right;
+	}
+	section.clash div.bar div.part div.image{
+		display:inline-block;
+	}
+	section.clash div.bar div.part div.matn{
+		display:inline-block;
+		margin-right:1vw;
+		font-size: 2.5vw;
+		
+	}
+	section.clash div.bar div.part div.image img{
+		height:11vw;
+		width:11vw;
+	}
+
+
+	section.list{
+		padding-bottom:10vw;
+	}
+	section.list div.image{
+		display:inline-block;
+		margin-left:2vw;
+	}
+	section.list div.image img{
+		width:25vw;
+		height:20vw;
+	}
+	section.content{
+		padding-right:2vw;
+		padding-left:2vw;
+		font-size:2.5vw;
+		text-align:right;
+		padding-bottom:10vw;
+	}
+	section.label{
+		font-size: 1.5vw;
+	}
+	section.comment{
+		position:relative;
+		height:60vw;
+		color:#707070;
+	}
+	section.comment div.first{
+		border:2px #b7b7b7 solid;
+		width:60%;
+		height:24vw;
+		text-align:right;
+		position:absolute;
+		right:3vw;
+	}
+	section.comment div.first div.text{
+		border-top:2px #b7b7b7 solid;
+		text-align:right;
+		width:80%;
+		max-height: 30vw;
+		margin-left:auto;
+		margin-right: auto;
+		padding-top:1vw;
+		font-size:2vw;
+	}
+	section.comment div.first div.name{
+		display:inline-block;
+		font-family:danaBold;
+		font-size:2vw;
+	}
+	section.comment div.first div.response{
+		display:inline-block;
+		margin-right:65%;
+		width: 2vw;
+		height: 2vw;
+		margin-bottom:-10%;
+		font-size:1.5vw;
+		font-family:danaBold;
+	}
+	section.comment div.first div.image{
+		display:inline-block;
+		padding-top:1vw;
+		padding-right:1vw;
+		padding-left:1vw;
+		padding-bottom:1vw;
+	}
+	section.comment div.first div.image img{
+		width:7vw;
+		height:7vw;
+	
+	}
+	section.comment div.second{
+		top:27vw;
+		border:2px #b7b7b7 solid;
+		width:60%;
+		height:24vw;
+		text-align:right;
+		position:absolute;
+		right:7vw;
+	}
+	section.comment div.second div.text{
+		border-top:2px #b7b7b7 solid;
+		text-align:right;
+		width:80%;
+		max-height: 30vw;
+		margin-left:auto;
+		margin-right: auto;
+		padding-top:1vw;
+		font-size:2vw;
+	}
+	section.comment div.second div.name{
+		display:inline-block;
+		font-family:danaBold;
+		font-size:2vw;
+	}
+	section.comment div.second div.response{
+		display:inline-block;
+		margin-right:65%;
+		width: 2vw;
+		height: 2vw;
+		margin-bottom:-10%;
+		font-size:1.5vw;
+		font-family:danaBold;
+	}
+	section.comment div.second div.image{
+		display:inline-block;
+		padding-top:1vw;
+		padding-right:1vw;
+		padding-left:1vw;
+		padding-bottom:1vw;
+	}
+	section.comment div.second div.image img{
+		width:7vw;
+		height:7vw;
+	}
+	section.comment div.third{
+		border:2px #b7b7b7 solid;
+		width:60%;
+		height:24vw;
+		text-align:right;
+		position:absolute;
+		right:3vw;
+		top:54vw;
+	}
+	section.comment div.third div.text{
+		border-top:2px #b7b7b7 solid;
+		text-align:right;
+		width:80%;
+		max-height: 30vw;
+		margin-left:auto;
+		margin-right: auto;
+		padding-top:1vw;
+		font-size:2vw;
+	}
+	section.comment div.third div.name{
+		display:inline-block;
+		font-family:danaBold;
+		font-size:2vw;
+	}
+	section.comment div.third div.response{
+		display:inline-block;
+		margin-right:65%;
+		width: 2vw;
+		height: 2vw;
+		margin-bottom:-10%;
+		font-size:1.5vw;
+		font-family:danaBold;
+	}
+	section.comment div.third div.image{
+		display:inline-block;
+		padding-top:1vw;
+		padding-right:1vw;
+		padding-left:1vw;
+		padding-bottom:1vw;
+	}
+	section.comment div.third div.image img{
+		width:7vw;
+		height:7vw;
+	}
+	
+	section.frame{
+		text-align:right;
+		height:70vw;
+		position:relative;
+		top:25vw;
+	}
+	section.frame textarea.mainf{
+		border:1px gray solid;
+		height:15vw;
+		width:60vw;
+		position:absolute;
+		right:1.5vw;
+	}
+	section.frame input.webf{
+		border:1px gray solid;
+		height:3vw;
+		width:15vw;
+		position:absolute;
+		right:5vw;
+		top:24.3vw;
+		padding-right:1vw;
+		text-align: right;
+		font-size: 2vw;
+	}
+	section.frame input.emailf{
+		border:1px gray solid;
+		height:3vw;
+		width:15vw;
+		position:absolute;
+		right:25vw;
+		top:24.3vw;
+		padding-right:1vw;
+		text-align: right;
+		font-size: 2vw;
+	}
+	section.frame input.namef{
+		border:1px gray solid;
+		height:3vw;
+		width:15vw;
+		position:absolute;
+		right:45vw;
+		top:24.3vw;
+		padding-right:1vw;
+		text-align: right;
+		font-size: 2vw;
+	}
+	section.frame input.send{
+		background-color:#ff7700;
+		color:white;
+		width:15vw;
+		height:3.5vw;
+		font-size: 2vw;
+		text-align:center;
+		border: none;
+		position:absolute;
+		top:29vw;
+		right:50vw;
+	}
+	section.frame div.title{
+		font-family:danaBold;
+		font-size:3.5vw;
+		padding-right:1vw;
+		padding-bottom:1.5vw;
+	}
+	section.footer{
+		height:50vw;
+		background-color:black;
+	}
+	section.footer div.i{
+		padding-top:10vw;
+		display:block;
+		margin-left:5vw;
+	}
+	section.footer div.i img{
+		height:8vw;
+		width:8vw;
+		margin-right:3vw;	
+	}
+	section.footer div.list{
+		display:block;
+		position:absolute;
+		right:20vw;
+		margin-top:20vw;
+		display:none;
+	}
+	section.footer div.content{
+		margin-top:5vw;
+		font-size:2.5vw;
+		color:white;
+		margin-left:5vw;
+		}
+	section.footer div.search{
+		background-color:#222221;
+		height:8vw;
+		width:50vw;
+		display:block;
+		position:absolute;
+		right:5vw;
+		margin-top:-40vw;
+	}
+	section.footer div.search img{
+		height:5vw;
+		width:6vw;
+		padding-top:2vw;
+		padding-left:2.5vw;
+	}
+	section.footer div.search textarea{
+		float: right;
+		background-color:#222221;
+		border: none;
+		color: white;
+		width: 44vw;
+		height: 8vw;
+	}
+	
+}
